@@ -1,13 +1,17 @@
 package org.acme.getting.started;
 
+import com.github.javafaker.Faker;
 import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
 
 @ApplicationScoped
 public class FriendshipService {
 
-    public Friend generate(String name) {
-        String address = "123 Imagination Road";
-        return new Friend(name, address);
+    @Inject
+    Faker faker;
+
+    public Friend generate() {
+        return new Friend(faker.name().fullName(), faker.address().fullAddress());
     }
 
 }
