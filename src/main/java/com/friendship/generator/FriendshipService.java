@@ -1,4 +1,4 @@
-package org.acme.getting.started;
+package com.friendship.generator;
 
 import com.github.javafaker.Faker;
 import javax.enterprise.context.ApplicationScoped;

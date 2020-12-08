@@ -1,4 +1,4 @@
-package org.acme.getting.started;
+package com.friendship.generator;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
